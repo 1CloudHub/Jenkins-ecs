@@ -208,7 +208,7 @@ It has composed of a username **(2256454)** and an image name **(1cloudhub).**
 
 The script for the Execute shell step will look like this, 
 
-Save this Job and click **Build** in Jenkins project. *(refer new-task.json)*
+Save this Job and click **Build** in Jenkins project.
 
 ![](https://github.com/Vahinvishnu/eks-workshop-sample-api-service-go/blob/master/10.JPG?raw=true)
 
