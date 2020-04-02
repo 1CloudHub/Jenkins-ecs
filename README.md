@@ -12,7 +12,7 @@ The following tasks will be performed:
 ####Configure the Jenkins Jobs for Deployment
 ####Automate the Build process in Jenkins
 
-###Prerequisites
+### Prerequisites
 - IAM Policies 
 - IAM Cross Account Roles
 - Jenkins with required Plugins
@@ -22,7 +22,7 @@ The following tasks will be performed:
 - S3 Bucket
 - ECS CLI
 
-###What is Amazon ECS?
+### What is Amazon ECS?
 Amazon Elastic Container Service (ECS) is a highly scalable, high performance container management service that supports Docker containers and allows you to easily run applications on a managed cluster of Amazon EC2 instance.
 ###What is AWS Fargate?
 AWS Fargate is a technology that you can use with Amazon ECS to run containers without having to manage servers or clusters of Amazon EC2 instances. 
@@ -33,11 +33,11 @@ Docker Hub is a cloud-based repository for Docker users. It allows to create, te
 ###What is Jenkins?
 Jenkins is an open source automation tool for Continuous Integration purpose, and it is used to build and test your software projects continuously making it easier for developers to integrate changes to the project.
 
-##Lets start the Walkthrough,
+## Lets start the Walkthrough,
 
 First, We need to enable the cross-account roles to connect three accounts, so that Jenkins has deployed the docker images in ECS which has launched in QA, Prod Accounts. 
 
-###Step1: Create a Cross Account Role (Dev to QA) Account
+### Step1: Create a Cross Account Role (Dev to QA) Account
 
 1. Sign into the** Dev Account** with administrator Privileges.
 
@@ -51,7 +51,7 @@ Select the **Administrator Privileges** and Click **Create Role**
 
 ![](https://github.com/Vahinvishnu/eks-workshop-sample-api-service-go/blob/master/2.png?raw=true)
 
-###Step 2: Create a New user in QA Account with ECS privileges
+### Step 2: Create a New user in QA Account with ECS privileges
 
 
 
