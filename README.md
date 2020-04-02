@@ -130,7 +130,7 @@ Jenkins user needs to login to Docker Hub before doing the first build.
 
 Create an ECS Cluster (**Powered by AWS Fargate**) with Container insights enabled.
 
-Goto AWS Console > **ECS** > **Create Cluster**> Select the Cluster template as"**Networking Only**"> **Cluster name** > **VPC **> **Enable container insights** > Click **Create**
+Goto AWS Console > **ECS** > **Create Cluster**> Select the Cluster template as"**Networking Only**"> **Cluster name** > **VPC**> **Enable container insights** > Click **Create**
 
 ![](https://github.com/Vahinvishnu/eks-workshop-sample-api-service-go/blob/master/23.png?raw=true)
 
