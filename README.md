@@ -3,13 +3,13 @@
 ### Whats covered in this guide,
 
 The following tasks will be performed:
-#### Enable the Cross Account policy in AWS for (Dev, QA and Prod)
-#### Launch the EC2 instance with Jenkins AMI.
-#### Setup the ECS Cluster
-#### Create the New-task Defenition in ECS
-#### Create a Load balancer and Service in ECS
-#### Configure the Jenkins Jobs for Deployment
-#### Automate the Build process in Jenkins
+>  #### Enable the Cross Account policy in AWS for (Dev, QA and Prod)
+  > #### Launch the EC2 instance with Jenkins AMI.
+ > #### Setup the ECS Cluster
+> #### Create the New-task Defenition in ECS
+> #### Create a Load balancer and Service in ECS
+> #### Configure the Jenkins Jobs for Deployment
+> #### Automate the Build process in Jenkins
 
 ### Prerequisites
 - IAM Policies 
@@ -79,7 +79,7 @@ Select the **Administrator Privileges** and Click **Create Role**
 
 ### Step 5: Setting Up Jenkins
 
-To set up our installation, we need login to Jenkins on its default port, 8080, using the server domain name or IP address: http://ip_address_or_domain_name:8080
+To set up our installation, we need login to Jenkins on its default port, 8080, using the server domain name or IP address: **http://ip_address_or_domain_name:8080**
 
 We should see “**Unlock Jenkins**” screen, which displays the location of the initial password
 
@@ -130,7 +130,7 @@ Jenkins user needs to login to Docker Hub before doing the first build.
 
 Create an ECS Cluster (**Powered by AWS Fargate**) with Container insights enabled.
 
-Goto AWS Console > **ECS** > **Create Cluster **> Select the Cluster template as"**Networking Only**"> **Cluster name** > **VPC **> **Enable container insights** > Click **Create**
+Goto AWS Console > **ECS** > **Create Cluster**> Select the Cluster template as"**Networking Only**"> **Cluster name** > **VPC **> **Enable container insights** > Click **Create**
 
 ![](https://github.com/Vahinvishnu/eks-workshop-sample-api-service-go/blob/master/23.png?raw=true)
 
@@ -182,7 +182,7 @@ Here we have not yet build a Docker image for our task, so in the above configur
 
 # Configure the Jenkins build
 
-On the Jenkins dashboard, click on **New Item**, select the **Freestyle project job**, add a **Name** for the job, and click **OK. **
+On the Jenkins dashboard, click on **New Item** select the **Freestyle project job** add a **Name** for the job and click **OK.**
 
 ## Configure the Jenkins job:
 
