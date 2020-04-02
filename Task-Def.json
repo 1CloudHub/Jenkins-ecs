@@ -1,0 +1,18 @@
+{
+    "family": "1cloudhub-website",
+    "containerDefinitions": [
+        {
+            "image": "<your-repository/1cloudhub:v_%BUILD_NUMBER%>",
+            "name": "1cloudhub",
+            "cpu": 2,
+            "memory": 4098,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 5000,
+                    "hostPort": 80
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+# sed -e "s;%BUILD_NUMBER%;0;g" 1cloudhub.json > 1cloudhub-v_0.json
+# aws ecs register-task-definition --cli-input-json file://1cloudhub-v_0.json
+{
+"taskDefinition": {
+    "volumes": [],
+    "taskDefinitionArn": "arn: aws:ecs:us-east-1:<Account ID>:task-definition/1cloudhub:1",
+    "containerDefinitions": [
+        {
+            "name": "1cloudhub-website",
+            "image": "your-repository/1cloudhub:v_0",
+            "cpu": 2,
+            "portMappings": [
+                {
+                    "containerPort": 5000,
+                    "hostPort": 80
+                }
+            ],
+            "memory": 4098,
+            "essential": true
+        }
+    ],
+    "family": "1cloudhub-website ",
+    "revision": 1
+}
+}
