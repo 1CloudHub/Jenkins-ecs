@@ -38,7 +38,7 @@ First, We need to enable the cross-account roles to connect three accounts, so t
 
 ### Step1: Create a Cross Account Role (Dev to QA) Account
 
-1. Sign into the** Dev Account** with administrator Privileges.
+1. Sign into the **Dev Account** with administrator Privileges.
 
 2. GO to **IAM -> Roles -> Create Role -> Another AWS Account** 
 
@@ -56,7 +56,7 @@ Select the **Administrator Privileges** and Click **Create Role**
 
 1. Login into the QA Account 
 
-2. GO to** IAM -> Users -> Add User**
+2. GO to **IAM -> Users -> Add User**
 3. Attach the  **AmazonECS_FullAccess Policy** and **Create User**. 
 
 4. Copy the **user arn** and paste it into the Dev Account Role (Trust Relationships).
@@ -67,9 +67,9 @@ Select the **Administrator Privileges** and Click **Create Role**
 
 1. Login to the Dev Account
 
-2. Go to IAM -> Roles  -> EC2 -> Administrator Access -> Create Role.
+2. Go to **IAM -> Roles  -> EC2 -> Administrator Access -> Create Role**.
 
-3.  Edit the trust relationshios in created Role and update the arn.
+3.  Edit the **trust relationships** in created Role and update the arn.
 
 ![](https://github.com/Vahinvishnu/eks-workshop-sample-api-service-go/blob/master/4.JPG?raw=true)
 
@@ -160,13 +160,13 @@ Save your task definition template as ***1cloudhub.json***
 
 Create an Elastic load balancer to be used in your service definition and note the ELB name as (e.g. 1ch-ecs-LB)
 
-Goto AWS console > EC2 >** Load balancer** > **Create Load Balancer** > Select **Application Load Balancer** > fill the **name, listners, security group, vpc and routing** > Click **Create**
+Goto AWS console > EC2 >**Load balancer** > **Create Load Balancer** > Select **Application Load Balancer** > fill the **name, listners, security group, vpc and routing** > Click **Create**
 
 # Create an ECS IAM Role.
 
 Goto AWS Console 
 
-Select **IAM** >** Role **> **Create New Role** > Attach the **Amazon EC2 Container Service Role** as Policies in the created Role.
+Select **IAM** >**Role**> **Create New Role** > Attach the **Amazon EC2 Container Service Role** as Policies in the created Role.
 
 *Attach the created Role to Jenkins instance.This will allows ECS to create and manage AWS resources, such as an ELB, on your behalf.*
 
