@@ -110,7 +110,7 @@ Search the below plugins and Install it.
 - **S3 publisher**
 - **Pipeline: Multibranch**
 - **dockerhub plugin**
-- **Github plugin****
+- **Github plugin**
 
 ### Step 8: Open the Jenkins server in CLI and Configure the user and ECS CLI.
 
@@ -188,8 +188,8 @@ On the Jenkins dashboard, click on **New Item** select the **Freestyle project j
 
 - Open the **Bitbucket**, and **clone** the repository URL as, e.g - https://bitbucket.com/1cloudhub/website.git
 In addition to the application source code, the repository contains the Dockerfile used to build the docker image.
-- Under **Source Code Management **provide the Repository URL for Git, e.g. https://bitbucket.com/1cloudhub/website.git and select the branch as **Master.**
-- In the **Build Triggers section** select * Build when a change is pushed to GitHub.*
+- Under **Source Code Management**provide the Repository URL for Git, e.g. https://bitbucket.com/1cloudhub/website.git and select the branch as **Master**
+- In the **Build Triggers section** select **Build when a change is pushed to GitHub**
 - In the **Build section** add a **Docker build and publish** step to the job and configure it to publish to your Docker registry repository 
 *(e.g. DockerHub) and add a tag to identify the image (e.g. v_$BUILD_NUMBER).*
 
