@@ -149,7 +149,7 @@ Create a task definition template for your application
 
 Save your task definition template as ***1cloudhub.json***
 
-"The image specified in the above template will be built in the Jenkins job, at this time we will create a dummy task definition and the %BUILD_NUMBER% parameter in your task definition template with a non-existent value (0) and register it with ECS Service."*(refer task-def.json)*
+"The image specified in the above template will be built in the Jenkins job, at this time we will create a dummy task definition and the %BUILD_NUMBER% parameter in your task definition template with a non-existent value (0) and register it with ECS Service."
 
 ![](https://github.com/Vahinvishnu/eks-workshop-sample-api-service-go/blob/master/21.JPG?raw=true)
 
@@ -174,7 +174,7 @@ Select **IAM** >**Role**> **Create New Role** > Attach the **Amazon EC2 Containe
 
 Open the Jenkins Instance in putty  and run the below Commands
 
-Create the Service named as **“1ch-demo-service”** specifying the task definition (e.g. 1cloudhub) and the ELB name (e.g. 1ch-ecs-LB) as below. *(Refer ecs-service.json)*
+Create the Service named as **“1ch-demo-service”** specifying the task definition (e.g. 1cloudhub) and the ELB name (e.g. 1ch-ecs-LB) as below.
 
 ![](https://github.com/Vahinvishnu/eks-workshop-sample-api-service-go/blob/master/7.JPG?raw=true)
 
